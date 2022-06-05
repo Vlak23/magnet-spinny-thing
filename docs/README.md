@@ -4,6 +4,13 @@ Done in Advanced Automation 2021-2022 at SSIS by Vannak. That's how it looks:
 
 ![picture](rpm_plot.png)
 
+## Driven by an external motor - June 4th, 2022
+
+![picture 1](spinning1.jpg)
+![picture 2](spinning2.jpg)
+![picture 3](spinning3.jpg)
+
+
 ## Code
 
 ``` py
