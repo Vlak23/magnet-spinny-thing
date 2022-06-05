@@ -1,7 +1,7 @@
 # magnet-spinny-thing
 Measuring the rpm of a spinning gear with magnetic sensor and Raspberry Pico
 
-This project was done by Vannak in his Advanced Automation Class. 
+This project was done by Vannak ([@Vlak23](https://github.com/Vlak23/magnet-spinny-thing)) in his Advanced Automation Class. 
 
 ## Upgrade to OLED Display and Raspberry Pico
 
@@ -12,14 +12,33 @@ On June 3rd the upgrade to the Pico with more memory finally worked. And the dis
 
 ## Code
 
-``` py # https://github.com/Vlak23/magnet-spinny-thing
-# Version 3.0
+``` py
+# https://github.com/Vlak23/magnet-spinny-thing
+# Version 8.0  2022-06-04 
+# adapted for Raspberry Pico and plotter output plus OLED display
 
 import board
+import busio
+import displayio
 import analogio
 import digitalio
+import terminalio
 import time
+from adafruit_display_text import label
+import adafruit_displayio_sh1106
 
+displayio.release_displays()
+
+# Connect display via I2C
+i2c = busio.I2C(board.GP17, board.GP16) # SCL SDA
+display_bus = displayio.I2CDisplay(i2c, device_address=0x3C)
+display = adafruit_displayio_sh1106.SH1106(display_bus, width=128, height=64)
+
+# Make the display context
+# splash = displayio.Group()
+# display.show(splash)
+print("Ready to start in 2 seconds, activate plotter")
+time.sleep(2.0)
 
 # Set up light sensor
 light = analogio.AnalogIn(board.A1)
