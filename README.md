@@ -8,6 +8,7 @@ This project was done by Vannak in his Advanced Automation Class.
 On June 3rd the upgrade to the Pico with more memory finally worked. And the display plotted the rpm as well. Plus the plotter in Circuitpython printed the values continously.
 
 ![picture](docs/rpm_plot.png)
+![Spinning](docs/spinning1.jpg)
 
 ## Code
 
@@ -94,3 +95,7 @@ while not stop_collecting:
 ```
 
 done.
+
+## More pictures
+
+<img src="docs/spinning2.jpg" width="49%"> <img src="docs/spinning3.jpg" width="49%">
