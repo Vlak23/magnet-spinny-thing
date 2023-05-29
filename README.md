@@ -1,7 +1,7 @@
 # magnet-spinny-thing
-Measuring the rpm of a spinning gear with magnetic sensor and Raspberry Pico
+Measuring the rpm of a spinning gear with magnetic sensor and Raspberry Pico. The data is displayed on an oled display and over the serial port on the integrated plotter of MU.
 
-This project was done by Vannak ([@Vlak23](https://github.com/Vlak23/magnet-spinny-thing)) in his Advanced Automation Class. 
+This project was done by Vannak ([@Vlak23](https://github.com/Vlak23/magnet-spinny-thing)) in his Advanced Automation Class 2021-2022. 
 
 ## Upgrade to OLED Display and Raspberry Pico
 
